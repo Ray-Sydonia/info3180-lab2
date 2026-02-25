@@ -1,3 +1,70 @@
 body {
     padding-top: 5rem;
+    background: #f3dfed;
 }
+
+.profile-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #9feabb;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  text-align: left;
+  margin-bottom: 24px;
+}
+
+.profile-photo {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #6c63ff;
+}
+
+.profile-info h2 {
+  margin: 0 0 4px;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+.username { color: #6c63ff; font-weight: bold; }
+.location, .joined { color: #666; margin: 4px 0; }
+.bio { margin-top: 10px; color: #444; }
+
+.profile-stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stat strong { font-size: 1.4rem; color: #333; }
+.stat span { color: #888; font-size: 0.9rem; }
+
+.follow-btn {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px 32px;
+  border-radius: 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.follow-btn:hover { background-color: #574fd6; }
