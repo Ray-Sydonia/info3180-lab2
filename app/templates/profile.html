@@ -2,32 +2,37 @@
 
 {% block main %}
 <div class="profile-container">
+
+  
   <div class="profile-header">
     <img src="{{ url_for('static', filename='profile pic.webp') }}" alt="Profile Photo" class="profile-photo">
-    <div class="profile-info">
-      <h2>Rayna Jarrett</h2>
-      <p class="username">@rainbow_shy</p>
-      <p class="location">📍 Kingston, Jamaica</p>
-      <p class="joined">Joined: {{ date_joined }}</p>
-      <p class="bio">Computer Science student passionate about web development, open source, and coffee ☕.</p>
-    </div>
+    <h2>Rayna Jarrett</h2>
+    <p class="username">@rainbow_shy</p>
+    <p class="location">📍 Kingston, Jamaica</p>
+    <p class="joined">Joined: {{ date_joined }}</p>
   </div>
 
-  <div class="profile-stats">
-    <div class="stat">
-      <strong>245</strong>
-      <span>Posts</span>
+  
+  <div class="profile-bottom">
+    <p class="bio">Computer Science student passionate about web development, open source, and coffee ☕.</p>
+
+    <div class="profile-stats">
+      <div class="stat">
+        <strong>245</strong>
+        <span>Posts</span>
+      </div>
+      <div class="stat">
+        <strong>1.2k</strong>
+        <span>Followers</span>
+      </div>
+      <div class="stat">
+        <strong>180</strong>
+        <span>Following</span>
+      </div>
     </div>
-    <div class="stat">
-      <strong>1.2k</strong>
-      <span>Followers</span>
-    </div>
-    <div class="stat">
-      <strong>180</strong>
-      <span>Following</span>
-    </div>
+
+    <button class="follow-btn">Follow</button>
   </div>
 
-  <button class="follow-btn">Follow</button>
 </div>
 {% endblock %}
